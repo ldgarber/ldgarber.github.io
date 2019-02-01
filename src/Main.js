@@ -15,9 +15,9 @@ class Main extends Component {
         <div>
           <h1>Leah Garber</h1>
           <ul className="header">
-            <li><NavLink to="/">Home</NavLink>
-            <li><NavLink to="/stuff">Stuff</NavLink>
-            <li><NavLink to="/contact">Contact</NavLink>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/stuff">Stuff</NavLink></li>
+            <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/> 
