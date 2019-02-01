@@ -1,0 +1,51 @@
+//color variables
+$white: #fff; 
+$bright-blue: #0099ff; 
+$light-black: #111; 
+$lime: #aacc00; 
+
+//color configs
+$main-background: $lime; 
+$nav-background: $light-black; 
+$navlink-text: $white; 
+$content-background: $white;  
+$navlink-active-background: $bright-blue; 
+
+body {
+  background-color: $main-background;  
+  padding: 20px;
+  margin: 0;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: $nav-background;
+  padding: 0;
+}
+ul.header li a {
+  color: $navlink-text;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: $content-background;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+.active {
+  background-color: $navlink-active-background;
+}
