@@ -8,6 +8,7 @@ import Home from "./Home";
 import Stuff from "./Stuff"; 
 import Contact from "./Contact"; 
 import github_icon from "./assets/github_icon.png"; 
+import linkedin_icon from "./assets/linkedin_icon.png"; 
  
 class Main extends Component {
   render() {
@@ -15,11 +16,18 @@ class Main extends Component {
       <HashRouter>
         <div>
           <h1>Leah D. Garber</h1>
-          <li class="d-inline">
-            <a href="https://github.com/ldgarber">
-              <img class="social-icon" src={github_icon} alt="github icon"/>
-            </a>
-          </li>
+          <ul class="social-icons">
+            <li class="d-inline">
+              <a href="https://github.com/ldgarber">
+                <img class="social-icon" src={github_icon} alt="github icon"/>
+              </a>
+            </li>
+            <li class="d-inline">
+              <a href="https://linkedin.com/in/leahdgarber">
+                <img class="social-icon" src={linkedin_icon} alt="github icon"/>
+              </a>
+            </li>
+          </ul>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/stuff">Stuff</NavLink></li>
