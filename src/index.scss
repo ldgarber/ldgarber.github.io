@@ -1,15 +1,25 @@
+//google fonts
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Major+Mono+Display');
+
 //color variables
 $white: #fff; 
 $bright-blue: #0099ff; 
 $light-black: #111; 
 $lime: #aacc00; 
 
+//font variables
+$major-mono-display: 'Major Mono Display'; 
+$inconsolata: 'Inconsolata'; 
+
 //color configs
-$main-background: $lime; 
+$main-background: $white; 
 $nav-background: $light-black; 
 $navlink-text: $white; 
 $content-background: $white;  
 $navlink-active-background: $bright-blue; 
+
+//font configs
+$main-header: $major-mono-display; 
 
 body {
   background-color: $main-background;  
@@ -17,7 +27,7 @@ body {
   margin: 0;
 }
 h1, h2, p, ul, li {
-  font-family: sans-serif;
+  font-family: $main-header, sans-serif;
 }
 ul.header li {
   display: inline;
