@@ -6,7 +6,6 @@ class Code extends Component {
   render() {
     return (
       <div className="code">
-        <Header />
         <Navbar />
         <p>This is a code page </p>
       </div>

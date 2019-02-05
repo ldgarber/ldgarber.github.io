@@ -7,8 +7,7 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="centered">
-          <h1>Leah D Garber</h1> 
-          <h2>Web developer</h2>
+          <h1>WELCOME</h1>
           <p>I am a coder and musician living in NYC</p>
           <br></br>
           

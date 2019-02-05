@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 class About extends Component { 
   render() {
     return (
-      <div className="About">
+      <div className="about">
         <Navbar />
         <p>This is an about page</p>
       </div>
