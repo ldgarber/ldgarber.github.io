@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import {
   Route, 
-  NavLink, 
+  Link, 
   HashRouter
 } from "react-router-dom"; 
 import Home from "./Home"; 
 import Code from "./Code";  
 import Music from "./Music"; 
-import Contact from "./Contact"; 
+import About from "./About"; 
 import github_icon from "./assets/github_icon.png"; 
 import linkedin_icon from "./assets/linkedin_icon.png"; 
  
@@ -16,30 +16,27 @@ class Main extends Component {
     return (
       <HashRouter>
         <div>
-          <h1>Leah D. Garber</h1>
+          <Link to="/"><h1>Leah D. Garber</h1></Link>
           <ul class="social-icons">
             <li class="d-inline">
-              <a href="https://github.com/ldgarber">
+              <a href="https://github.com/ldgarber" target="_blank" rel="noopener noreferrer">
                 <img class="social-icon" src={github_icon} alt="github icon"/>
               </a>
             </li>
             <li class="d-inline">
-              <a href="https://linkedin.com/in/leahdgarber">
+              <a href="https://linkedin.com/in/leahdgarber" target="_blank" rel="noopener noreferrer">
                 <img class="social-icon" src={linkedin_icon} alt="github icon"/>
               </a>
             </li>
           </ul>
-          <ul className="header">
-            <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to="/code">Code</NavLink></li>
-            <li><NavLink to="/music">Music</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
+          <ul class="right-side-links">
+            <li><Link className="link" to="/code">Projects</Link></li>
           </ul>
           <div className="content">
-            <Route exact path="/" component={Home}/> 
+            <Route exact path="/" component={Home}/>
             <Route path="/code" component={Code}/> 
             <Route path="/music" component={Music}/>
-            <Route path="/contact" component={Contact}/> 
+            <Route path="/about" component={About}/>
           </div>
         </div>
       </HashRouter>

@@ -30,6 +30,10 @@ body {
 h1, h2, p, ul, li {
   font-family: $main-header, sans-serif;
 }
+a {
+  text-decoration: none; 
+  color: $light-black; 
+} 
 ul.header li {
   display: inline;
   list-style-type: none;
@@ -57,6 +61,9 @@ ul.header li a {
 .content li {
   margin-bottom: 10px;
 }
+.centered {
+  text-align: center; 
+} 
 .active {
   background-color: $navlink-active-background;
 }
@@ -75,6 +82,17 @@ ul.header li a {
   padding: 0px; 
   margin: 0px; 
 } 
+.right-side-links {
+  position: absolute; 
+  top: 20px; 
+  right: 20px; 
+  list-style-type: none; 
+} 
+.link {
+  text-decoration: none; 
+  color: $light-black; 
+} 
+//tictactoe stuff
 .tictactoe {
   padding: 10px; 
 } 
@@ -94,13 +112,12 @@ ul.header li a {
   cursor: pointer; 
 } 
 
+//overlap logo section
 .overlap-div {
   padding: 10px; 
   height: 75px; 
   border: 2px solid black; 
-} 
- 
-//overlap logo section
+}  
 .overlap {
   position: absolute;  
   font-size: 75px; 
