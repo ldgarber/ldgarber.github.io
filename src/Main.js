@@ -5,7 +5,8 @@ import {
   HashRouter
 } from "react-router-dom"; 
 import Home from "./Home"; 
-import Stuff from "./Stuff"; 
+import Code from "./Code";  
+import Music from "./Music"; 
 import Contact from "./Contact"; 
 import github_icon from "./assets/github_icon.png"; 
 import linkedin_icon from "./assets/linkedin_icon.png"; 
@@ -30,12 +31,14 @@ class Main extends Component {
           </ul>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to="/stuff">Stuff</NavLink></li>
+            <li><NavLink to="/code">Code</NavLink></li>
+            <li><NavLink to="/music">Music</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/> 
-            <Route path="/stuff" component={Stuff}/> 
+            <Route path="/code" component={Code}/> 
+            <Route path="/music" component={Music}/>
             <Route path="/contact" component={Contact}/> 
           </div>
         </div>

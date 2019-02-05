@@ -1,5 +1,5 @@
 //google fonts
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Major+Mono+Display');
+@import url('https://fonts.googleapis.com/css?family=Anton|Inconsolata|Major+Mono+Display');
 
 //color variables
 $white: #fff; 
@@ -10,6 +10,7 @@ $lime: #aacc00;
 //font variables
 $major-mono-display: 'Major Mono Display'; 
 $inconsolata: 'Inconsolata'; 
+$anton: 'Anton'; 
 
 //color configs
 $main-background: $white; 
@@ -92,4 +93,31 @@ ul.header li a {
   padding: 10px; 
   cursor: pointer; 
 } 
+
+.overlap-div {
+  padding: 10px; 
+  height: 75px; 
+  border: 2px solid black; 
+} 
  
+//overlap logo section
+.overlap {
+  position: absolute;  
+  font-size: 75px; 
+  font-family: $anton, sans-serif;
+} 
+#overlap-1 {
+  color: black; 
+  z-index: 2; 
+} 
+#overlap-2 {
+  color: blue; 
+  z-index: 1; 
+  opacity: .8; 
+}
+#overlap-3 {
+  color: yellow; 
+  z-index: 3; 
+  opacity: .8; 
+}
+

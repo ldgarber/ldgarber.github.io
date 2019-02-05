@@ -1,11 +1,10 @@
 import React, { Component } from "react"; 
-import Game from "./TicTacToe/Game"; 
+import OverlapLogo from "./OverlapLogo"; 
 
 class Home extends Component { 
   render() {
     return (
-      <div>
-        <h2>Home</h2>
+      <div className="home">
       </div>
     )
   } 
