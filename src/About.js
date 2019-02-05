@@ -1,15 +1,10 @@
-import React, { Component } from "react"; 
-import Navbar from "./Navbar"; 
+import React from "react"; 
+import ContentPage from "./ContentPage"; 
 
-class About extends Component { 
-  render() {
-    return (
-      <div className="about">
-        <Navbar />
-        <p>This is an about page</p>
-      </div>
-    )
-  } 
-} 
+const About = () => (
+  <ContentPage>
+    <p>About</p>
+  </ContentPage>
+); 
 
 export default About; 

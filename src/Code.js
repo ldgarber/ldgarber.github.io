@@ -1,16 +1,10 @@
-import React, { Component } from "react"; 
-import Navbar from "./Navbar"; 
-import Header from "./Header"; 
+import React from "react"; 
+import ContentPage from "./ContentPage"; 
 
-class Code extends Component { 
-  render() {
-    return (
-      <div className="code">
-        <Navbar />
-        <p>This is a code page </p>
-      </div>
-    )
-  } 
-} 
+const Code = () => (
+  <ContentPage>
+    <p>Code</p>
+  </ContentPage>
+); 
 
 export default Code; 

@@ -1,15 +1,10 @@
-import React, { Component } from "react"; 
-import Navbar from "./Navbar"; 
+import React from "react"; 
+import ContentPage from "./ContentPage"; 
 
-class Music extends Component { 
-  render() {
-    return (
-      <div className="music">
-        <Navbar />
-        <p>This is a music page</p>
-      </div>
-    )
-  } 
-} 
+const Music = () => (
+  <ContentPage>
+    <p>Music</p>
+  </ContentPage>
+); 
 
 export default Music; 
