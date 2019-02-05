@@ -91,6 +91,13 @@ ul.header li a {
   text-decoration: none; 
   color: $light-black; 
 } 
+.post {
+  margin: 20px; 
+  border: 1px dotted $light-black; 
+  border-radius: 10px; 
+  padding: 20px; 
+} 
+
 //tictactoe stuff
 .tictactoe {
   padding: 10px; 

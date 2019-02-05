@@ -8,7 +8,7 @@ class Header extends React.Component {
       <div>
         <Link to={"/"}><h1>Leah D. Garber</h1></Link>
         <SocialIcons />
-        <ul class="right-side-links">
+        <ul className="right-side-links">
           <li><Link className="link" to={"/code"}>Projects</Link></li>
         </ul>
       </div>
