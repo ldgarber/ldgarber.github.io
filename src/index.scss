@@ -24,6 +24,7 @@ $main-header: $major-mono-display;
 
 body {
   background-color: $main-background;  
+  font-family: $main-header, sans-serif;
   padding: 20px;
   margin: 0;
 }
@@ -96,6 +97,15 @@ ul.header li a {
   border: 1px dotted $light-black; 
   border-radius: 10px; 
   padding: 20px; 
+} 
+.post-link {
+  display: inline-block; 
+  background-color: $light-black; 
+  border-radius: 5px; 
+  padding: 10px; 
+  a {
+    color: $white; 
+  } 
 } 
 
 //tictactoe stuff
