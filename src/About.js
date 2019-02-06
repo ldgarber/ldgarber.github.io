@@ -3,7 +3,9 @@ import ContentPage from "./ContentPage";
 
 const About = () => (
   <ContentPage>
-    <p>About</p>
+    <div className="about-photo">
+      <img id="about-photo" src="/images/about-photo.jpg"/>
+    </div>
   </ContentPage>
 ); 
 
