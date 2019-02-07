@@ -108,9 +108,9 @@ ul.header li a {
   } 
 } 
 
-//tictactoe stuff
-.tictactoe {
-  padding: 10px; 
+//tictactoe stuff 
+.tic-tac-toe {
+  display: inline-block; 
 } 
 .row {
   display: flex; 
@@ -122,9 +122,10 @@ ul.header li a {
   display: inline-block; 
 } 
 .cell {
+  width: 40px; 
   height: 40px; 
+  margin-top: 10; 
   text-align: center; 
-  padding: 10px; 
   cursor: pointer; 
 } 
 

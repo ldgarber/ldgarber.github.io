@@ -1,16 +1,11 @@
 import React from "react"; 
 
-class Cell extends React.Component { 
-  handleClick = () => {
-    console.log("CLicked!"); 
-  } 
-  render() {
-    return (
-      <div className="cell" onClick={this.handleClick}>
-        {this.props.symbol}  
-      </div>
-    ) 
-  } 
+function Cell(props) {
+  return (
+    <div className="cell" onClick={props.onClick}>
+      {props.value}
+    </div>
+  ); 
 } 
 
 export default Cell; 

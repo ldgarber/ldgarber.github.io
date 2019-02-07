@@ -1,6 +1,7 @@
 import React, { Component } from "react"; 
 import { Link } from "react-router-dom"; 
 import SocialIcons from "./SocialIcons"; 
+import Board from "./TicTacToe/Board"; 
 
 class Home extends Component { 
   render() {
@@ -15,6 +16,7 @@ class Home extends Component {
           
           <p>Or find me on social media</p>
           <SocialIcons />
+          <Board />
         </div>
       </div>
     )
