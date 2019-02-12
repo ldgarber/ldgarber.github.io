@@ -6,8 +6,9 @@ import IMAGES from './constants/_images';
 const loaderStyle = {
   height: "300", 
   width: "300", 
-  backgroundImage: 'url("/images/loader.gif")',
+  background: "url('/images/loader.gif')",
   backgroundPosition: 'center', 
+  backgroundSize: "100px 100px", 
   backgroundRepeat: 'no-repeat', 
 } 
 
