@@ -3,7 +3,7 @@ import {
   Route, 
   Redirect, 
   Switch, 
-  BrowserRouter, 
+  HashRouter, 
 } from "react-router-dom"; 
 import Header from "./Header"; 
 import Home from "./Home"; 
@@ -16,7 +16,7 @@ const NotFoundRedirect = () => <Redirect to="/"/>
 class Main extends Component {
   render() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <div>
           <Header />
           <div className="content">
@@ -29,7 +29,7 @@ class Main extends Component {
             </Switch>
           </div>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
