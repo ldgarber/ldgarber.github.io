@@ -16,7 +16,7 @@ const NotFoundRedirect = () => <Redirect to="/"/>
 class Main extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
           <Header />
           <div className="content">
