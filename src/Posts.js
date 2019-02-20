@@ -13,19 +13,6 @@ const Post = (props) => {
       <Link className="post-link" key={post.id} to={{ pathname: `/code/${post.id}` }}>Blog Post</Link>
     </div>
   ); 
-}
-
-const CodeBlog = ({ match }) => {
-  console.log("post blog component"); 
-  const post = POSTS[parseInt(match.params.id, 10)]; 
-  if (!post) { return <div>Post not found</div>; }
-
-  return (
-    <div>
-      <h1>{post.title}</h1>
-      <p>{post.blog}</p>
-    </div> 
-  )
 } 
  
 class Posts extends Component { 

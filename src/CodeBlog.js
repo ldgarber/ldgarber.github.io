@@ -1,4 +1,4 @@
-import React, { Component } from "react"; 
+import React from "react"; 
 import ContentPage from "./ContentPage"; 
 import { Link } from "react-router-dom"; 
 import POSTS from "./constants/_code_posts"; 
