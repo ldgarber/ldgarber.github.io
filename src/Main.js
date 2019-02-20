@@ -8,6 +8,7 @@ import {
 import Header from "./Header"; 
 import Home from "./Home"; 
 import Code from "./Code";  
+import CodeBlog from "./CodeBlog"; 
 import Music from "./Music"; 
 import About from "./About"; 
 
@@ -22,7 +23,8 @@ class Main extends Component {
           <div className="content">
             <Switch>
               <Route exact path="/" component={Home}/>
-              <Route path="/code" component={Code}/> 
+              <Route exact path="/code" component={Code}/> 
+              <Route path="/code/:id" component={CodeBlog} />
               <Route path="/music" component={Music}/>
               <Route path="/about" component={About}/>
               <Route component={NotFoundRedirect} />

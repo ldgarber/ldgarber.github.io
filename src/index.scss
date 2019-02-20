@@ -99,10 +99,16 @@ ul.header li a {
   padding: 20px; 
 } 
 .post-link {
+  margin: 10 10 0 0; 
   display: inline-block; 
-  background-color: $light-black; 
   border-radius: 5px; 
   padding: 10px; 
+  border: 1px dotted $light-black; 
+}
+ 
+#post-link-dark {
+  background-color: $light-black; 
+  color: $white; 
   a {
     color: $white; 
   } 
@@ -172,13 +178,12 @@ ul.header li a {
 #about-content {
   width: 65%; 
   margin: auto; 
-} 
- 
+}  
 .spotify-player {
   margin: 20px; 
   box-shadow: 5px 5px 5px; 
-} 
- 
+}  
 .music-section {
   margin-bottom: 50; 
-} 
+}  
+ 
