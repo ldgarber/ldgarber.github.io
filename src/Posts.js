@@ -10,7 +10,9 @@ const Post = (props) => {
       <h1>{post.title}</h1>
       <p>{post.body}</p>
       <div className="post-link" id="post-link-dark"><a href={post.link} target="_blank" rel="noopener noreferrer">Link to the project</a></div> 
-      <Link className="post-link" key={post.id} to={{ pathname: `/code/${post.id}` }}>Blog Post</Link>
+      { !!(post.blog) &&
+        <Link className="post-link" key={post.id} to={{ pathname: `/code/${post.id}` }}>Blog Post</Link>
+      } 
     </div>
   ); 
 } 

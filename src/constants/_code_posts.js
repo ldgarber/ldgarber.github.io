@@ -11,7 +11,7 @@ const posts = [
     title: "React Memory Game", 
     body: "A card-flipping memory game I made in React.js.", 
     link: "https://leahdgarber.com/react-memory-game", 
-    blog: "Test blog 2"
+    blog: "",
   } 
 ] 
 
