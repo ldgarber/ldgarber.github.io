@@ -4,7 +4,7 @@ const posts = [
     title: "Exploring the Watson API", 
     body: "A webapp that analyzes the tone of a block of text, using the IBM Watson Tone API.", 
     link: "http://tone-analyzer.herokuapp.com/", 
-    blog: "This is a  long string" 
+    blog: "" 
   }, 
   {
     id: 1, 
