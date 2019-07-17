@@ -5,3 +5,5 @@ built using react
 *** to deploy changes, go to master ***
 *** do 'git merge source' ***
 *** then go back to source and do npm run deploy ***
+
+Then update url in settings in github
