@@ -1,11 +1,11 @@
-import React from "react"; 
-import ContentPage from "./ContentPage"; 
+import React from "react";
+import ContentPage from "./ContentPage";
 
 const About = () => {
-  const aboutText = 
-    `I'm a QA Engineer at HappyFunCorp, where I work on web and mobile apps.\
+  const aboutText =
+    `I'm a Software Engineer in Test at Unite Us, where I work on technology to address the Social Determinants of Health.\
   I take pride in ensuring the quality of data, UI/UX, and holistic functionality.\
-  My other passion is web development, making websites such as this one, 
+  I also enjoy web development, making websites such as this one,
     using Ruby on Rails, React.js, HTML and CSS.`
 
   return(
@@ -19,6 +19,6 @@ const About = () => {
       </div>
     </div>
   </ContentPage>
-)}; 
+)};
 
-export default About; 
+export default About;
